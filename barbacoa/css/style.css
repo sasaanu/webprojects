@@ -1,0 +1,593 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+    background-color: #000;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* レイアウト */
+.align-center{
+    text-align: center;
+}
+
+
+/* 見出し */
+.font-english{
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #eee;
+}
+
+.page-title{
+    font-size: 2rem;
+    color: #eee;
+    font-weight: 600;
+    text-align: center;
+    line-height: 5;
+}
+.sub-title{
+    font-size: 1.5rem;
+    color: #eee;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2;
+}
+
+
+/* ボタン */
+.btn{
+    display: inline-block;
+    font-size: 1.1rem;
+    background-color: #ddd;
+    color: #111;
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    margin-bottom: 5rem;
+}
+.btn:hover{
+    translate:0 10px;
+    background-color: saddlebrown;
+}
+
+/* iframe */
+
+
+
+/* ヘッダー
+------------------------------- */
+.page-header{
+    padding-top: 0.5rem;
+}
+.logo-center{
+    margin-top: 12rem;
+    }
+.logo{
+    width: 210px;
+    margin-top: 2rem;
+}
+.main-nav{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.3rem;
+    list-style: none;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+}
+.main-nav a{
+    color: #eee;
+}
+.main-nav a:hover{
+    color: #bbb;
+}
+.main-nav li:hover{
+    translate:0 5px;
+}
+/* ヘッダーカバー画像
+------------------------------- */
+
+
+
+
+/* HOME
+------------------------------- */
+.cover{
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+.cover-home{
+    background-image: url(../images/cover-home-m.jpg);
+}
+.about{
+    max-width: 736px;
+    margin: 2rem auto 4rem;
+}
+.about p{
+    margin-bottom: 3rem;
+    color: #ccc;
+    text-align: justify;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+p{
+    margin-bottom: 3rem;
+    color: #999;
+    padding: 0 1.5rem;
+    margin: 3rem auto 4rem;
+}
+.heading-large{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.heading-medium{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.page-titlehome{
+    font-size: 1.7rem;
+    color: #eee;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 3rem;
+}
+.home-flex, .home-flex1{
+    margin-bottom: 5rem;
+}
+
+.welcome-main{
+    margin-bottom: 5rem;
+}
+
+.wrapper{
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.loco{
+    color: #fff;
+    font-size: 1rem;
+    padding-top: 2rem;
+    font-weight: 600;
+}
+.shop{
+    background-position: center;
+    background-size: cover;
+}
+.main{
+    grid-column: 1/3;
+    font-weight: 600;
+}
+.main {
+    background-image: url(../images/Locations/shop-aoyama.webp);  
+}
+.main1{
+    background-image: url(../images/Locations/shop-marunouchi.webp);
+}
+.main2{
+    background-image: url(../images/Locations/shop-shinjuku.webp);
+}
+.main3{
+    background-image: url(../images/Locations/shop-shibuya.webp);
+}
+.main4{
+    background-image: url(../images/Locations/shop-umeda.webp);
+}
+.main5{
+    background-image: url(../images/Locations/shop-shinsaibashi.webp);
+}
+.main6{
+    background-image: url(../images/Locations/shop-roppongi.webp);
+}
+.main7{
+    background-image: url(../images/Locations/shop-takanawa.webp);
+}
+.main8{
+    background-image: url(../images/Locations/shop-toranomon.webp);
+}
+.location-menu{
+    margin-bottom: 5rem;
+}
+    
+/* NEWS
+------------------------------- */
+
+.post{
+    margin-bottom:3rem;
+
+}
+.news-details{
+    text-align: justify;
+    text-align: left;
+    
+}
+.post-title{
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: #ccc;
+}
+.post-date{
+    font-size:0.875rem;
+    color: #aaa;
+}
+.post-info{
+    display:flex;
+    gap:1rem;
+    margin-bottom: 2rem;
+}
+.post-cat{
+    display:flex;
+    gap:0.5rem;
+    list-style: none;
+}
+
+
+.post-cat a{
+    color:#bbb;
+    border-bottom-style:  solid;
+    border-bottom: 1px;
+    border-bottom-color: #ccc;
+    font-size:0.875rem;
+    padding: 0.5rem 0.75rem;
+}
+.post-cat a:hover{
+    border-bottom-style: solid;
+    border-top: 1px;
+}
+
+
+/* サイドバー */
+.side-menu{
+    list-style:none;
+    text-align: center;
+    margin-bottom:6rem;
+}
+.side-menu li{
+    border-bottom:0.5px solid #666;
+}
+.side-menu a{
+    color:#ccc;
+    display:block;
+    padding:1rem;
+    font-size: 1rem;
+}
+.side-menu a:hover{
+    color:saddlebrown;
+}
+
+
+
+/* MENU
+------------------------------- */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem 1.2rem;
+    text-align:center;
+
+}
+.item img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.item-pc img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.item p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.item-pc p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.item-big{
+    grid-column: 1/3;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+
+/* CONTACT
+------------------------------- */
+.location{
+    margin-bottom: 3.5rem;
+}
+.location-info{
+    margin-bottom: 2rem;
+}
+.location-info .info{
+    padding: 0;
+}
+iframe{
+    width: 100%;
+}
+
+.email p{
+    text-align: justify;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+
+/* お問い合わせ */
+
+
+
+
+/* SNS */
+.sns-item{
+    margin-bottom: 2rem;
+}
+.sns-item .heading-medium{
+    margin-bottom: .5rem;
+}
+.sns-youtube{
+    aspect-ratio: 16/9;
+}
+.sns-youtube iframe{
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+
+
+/* フッター
+------------------------------- */
+.page-footer{
+    margin-top: 5rem;
+}
+
+.info{
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+    color: #aaa;
+}
+.info th,
+.info td{
+    border-bottom: 1px solid #333;
+}
+.info th{
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+    padding-right: 3rem;
+}
+.info td{
+    padding: 1rem 0;
+
+}
+.copyright{
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.ad{
+    text-align:center;
+}
+
+/* デスクトップ版
+------------------------------------------------------------------------------------------------------------------------ */
+@media (min-width:800px){
+
+    .logo-center{
+        margin-top: 13rem;
+    }
+    .page-title{
+        font-size:2.5rem;
+    }
+    .heading-large{
+        font-size:4rem;
+    }
+    .main-nav{
+        column-gap: 60px;
+        font-size:1.7rem;
+        padding-top: 1.5rem;
+    }
+    .cover-home{
+        background-image: url(../images/cover-home-d.jpg);
+        height: 1000px;
+    }
+    .about{
+        max-width: 1920px;
+        margin-bottom: 7rem;
+    }
+    .about p{
+        max-width: 1120px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .home-flex, .home-flex1{
+        display: flex;
+        align-items: center;
+        max-width: 1120px;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    .home-flex1{
+        flex-direction: row-reverse;
+    }
+    .home-flex p, .home-flex1 p{
+        font-size: 1.2rem;
+        color: #eee;
+        text-align: justify;
+    }
+    .sub-title{
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+    .page-titlehome{
+        font-size: 2.3rem;
+    }
+    #homep{
+        color: #ccc;
+        font-size: 1.2rem;
+        max-width: 1200px;
+        text-align: center;
+    }
+    .homeflexp{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    text-align:center;
+
+    }
+    
+    .main{
+    grid-column: 1/5;
+    font-weight: 600;
+    }
+
+    .loco{
+        font-size: 1.3rem;
+    }
+
+    /* MENU */
+    
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem 2rem;
+        text-align:center;
+        padding: 15px;
+    }
+
+    .item img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .item p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .item-pc p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .item-big{
+        grid-column: auto;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+    .best{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem 2rem;
+        text-align:center;
+        padding: 15px;
+    }
+    .item-pc img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    /* NEWS */
+        
+    .news-contents{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .post{
+        width: 60%;
+        order: 2;
+
+    }
+
+    .sidebar{
+        width: 22%;
+        order: 3;
+    }
+    .ad{
+        order: 1;
+    }
+    
+    .sidebar .heading-medium{
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    
+    /* CONTACT */
+        
+    .location{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .location-info{
+        width: 32%;
+    }
+    .location-info .info th{
+        padding-left: 2rem;
+    }
+    .location-map{
+        width: 64%;
+    }
+    email{
+        margin-bottom: 4rem;
+    }
+    .sns{
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 0;
+    }
+    .sns-item{
+        flex: 1;
+    }
+    
+    .sub-cover{
+        height: 400px;
+        margin-bottom: 6rem;
+    }
+    .about{
+        margin: 4rem auto 0;
+    }
+    .page-footer{
+        background-image: url(../images/footer.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-top: 12rem;
+    }
+    .info th{
+        padding-left: 2.5rem;
+    }
+
+}
